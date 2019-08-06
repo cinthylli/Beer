@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Ovo&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Ovo&display=swap');
+
+/* --------------------------------- Constantes*/
+
+:root {
+    /* Color */
+    --color-green-olive:#609018;
+    --color-green-lime:#90C048;
+    --color-green-yellow:#C3DC4B;
+    --color-green-dark:#003000;
+    --color-green-dark-secondary:#0f4e0f;
+    --color-orange:#FF7903;
+    --color-green:#90C048;
+    --color-white: antiquewhite;
+    --color-black:rgb(21, 34, 21);
+    /* Color */
+    /* Fonts */
+    --letter-size-s:18px;
+    --letter-size-m:24px;
+    --letter-size-l:32px;
+    --letter-size-xl:70px;
+    --letter-size-xxl:80px;
+    /* font-family */
+    --letter-font-principal:'Berkshire Swash',
+    cursive;
+    --letter-font-secundaria:'Ovo',
+    serif;
+    /* font-family */
+    /* Fonts */
+    /* space */
+    --space-s: 10px;
+    --space-m: 20px;
+    --space-l: 30px;
+    /* space */
+
+
+}
+html, body {
+    padding: 0%;
+    margin: 0%;
+    font-size: var(--letter-size-s);
+    font-family: var(--letter-font-principal);
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+h1 {
+    font-size: var(--letter-size-xl);
+}
+
+h2 {
+    font-size: var(--letter-size-l);
+}
+
+h3 {
+    font-size: var(--letter-size-m);
+}
+
+p{
+    font-family: var(--letter-font-secundaria);
+}
+
+/* ---------------------------------Barra de Navegacion */
+
+nav{
+    display: flex;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: var(--space-s);
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--letter-size-m);
+    font-family: var(--letter-font-principal);
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    /* padding: var(--space-s); */
+    list-style: none;
+}
+
+nav li a{
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+}
+
+nav li a:hover,
+nav div div h2:hover {
+    color: var(--color-green);
+}
+
+nav li a i{
+    color: var(--color-green-yellow);
+    text-decoration: none;
+
+}
+
+nav div ul li:hover {
+    color: var(--color-green);
+}
+
+nav div ul i:hover {
+    color: var(--color-green);
+}
+
+/* ------------------------------logo */
+.brand{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#logo{
+    margin-right:var(--space-s);
+}
+/* ------------------------------logo */
+
+/* ---------------------------------Barra de Navegacion */
+/* ---------------------------Productos */
+
+section h1{
+    text-align: center;
+}
+#productos{
+    background-image: url(/images/cerveza-artesanal-antigua-guatemala-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1920px;
+    height: 1080px;
+    padding: 2%;
+}
+
+#productos h1{
+    color:var(--color-white);
+    font-size: var(--letter-size-xl);
+    justify-content: left;
+    align-content: flex-start;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#productos h1:hover {
+    color:rgb(252, 253, 158);
+    font-size: var(--letter-size-xxl);
+}
+
+/* ---------------------------Productos */
+
+/* ---------------------Reservaciones y Eventos */
+#reservaciones{
+    color: antiquewhite
+}
+
+/* ---------------------Reservaciones y Eventos */
+.events{
+    display:flex;
+}
+
+.event{
+
+    padding: 1% 1% 1% 1%;
+
+}
+
+.event .content{
+    background-color: var(--color-green-dark-secondary);
+    padding: 2%;
+    box-shadow:0px 1px 1px rgba(21, 34, 21, 0.31);
+}
+
+.img-content{
+    text-align: center;
+}
+
+.btn-comprar{
+    background-color: var(--color-green-olive);
+    color:var(--color-white);
+    width: 100%;
+    padding: 1%;
+    font-size: var(--letter-size-l);
+    font-family: var(--letter-font-principal);
+    border-radius: 10px;
+}
+
+.btn-comprar:hover {
+    background-color: var(--color-white);
+    color: var(--color-green-dark)
+}
+
+/* ----------Sedes */
+section div div div h2,
+section div div div div {
+    text-align: center;
+}
+
+section div div div h3 {
+    text-align: left;
+    font-family: var(--letter-font-secundaria);
+}
+
+.direcciones{
+    display: flex;
+    
+}
+
+.direccion {
+    /* border: 3px solid var(--color-green-dark-secondary); */
+    padding: 5%;
+}
+.icon{
+    color: #609018;
+    margin: 3px;
+    padding: 2px;
+}
+
+.icon i {
+        margin: 3px;
+        padding: 2px;
+}
+
+.whatsapp {
+    display:flex !important;   
+}
+
+.celular{
+font-size: var(--letter-size-l);
+    color: var(--color-white);
+}
+/* ----------Sedes */
+
+/* ---------------amigos */
+
+.descripcion-ganar-puntos{
+    font-family: var(--letter-font-secundaria);
+    font-size: var(--letter-size-m)
+}
+
+/* ---------------amigos */
+
+label{
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+}
