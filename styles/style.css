@@ -37,13 +37,22 @@
 
 
 }
-html, body {
+html, body{
     padding: 0%;
     margin: 0%;
     font-size: var(--letter-size-s);
     font-family: var(--letter-font-principal);
     background-color: var(--color-black);
     color: var(--color-white);
+}
+
+footer{
+    background: var(--color-green-dark-secondary);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
 }
 
 h1 {
@@ -246,6 +255,37 @@ font-size: var(--letter-size-l);
 
 label{
     display: block;
-    margin-top: 10px;
+    padding: 1% 0%;
     font-size: 18px;
+    width: 700px;
 }
+
+ input{
+    margin: 10px;
+    padding: 1% 0%;
+    width: 100%;
+}
+
+.label-formulario{
+    /* width: 100%; */
+}
+
+.amigos {
+    display: flex;
+    justify-content:space-between;
+    /* border: 2px solid #FF7903; */
+}
+
+.amigos-seccion {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* --------------------------------Footer */
+
+footer div {
+        text-align: center;
+    }
+
+/* --------------------------------Footer */

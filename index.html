@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/styles/normalize.css">
     <link rel="stylesheet" href="/styles/mobile.css">
     <link rel="stylesheet" href="/styles/animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <script src="https://kit.fontawesome.com/d886103c54.js"></script>
     <!-- hoja de estilos -->
     <!-- hoja de scripts -->
@@ -18,7 +19,6 @@
     <title>Beer</title>
 </head>
 <body>  
-    
     <!-- NavBar -->
     <nav class="fadeInDown">
         <div class="brand" >
@@ -26,8 +26,10 @@
                 <img src="/images/trebol.png" alt="icono" srcset="" width="70" height="70">
             </div>
             <div id="brand-name">
-                <h2>Clover's Friends Club</h2>
+                <h2 onclick="play()">Clover's Friends Club</h2>
+                <audio src="/music/beerSongI.mp3" id="audio"></audio>
             </div>
+
         </div>
         <div class="nav_options">
             <ul>
@@ -50,7 +52,7 @@
         
     </section>
     <section class="" id="reservaciones">
-        <h1>Reservaciones & Eventos</h1>
+        <h1 class="animated zoomInLeft">Reservaciones & Eventos</h1>
         <div class="events">
             <div class="event">
                 <div class="content">
@@ -89,7 +91,7 @@
             </div>           
         </section>
         <section id="sedes">
-            <h1>Nuestras Sedes</h1>
+            <h1 class="animated zoomInLeft">Nuestras Sedes</h1>
             <div class="indicaciones">
                 <div class="direcciones">
                     <div class="direccion">
@@ -127,39 +129,46 @@
             </div>
             <div class="mapa">
                 <h1>Disfruta de nuestra sede mas cercana</h1>
-                <i class="fas fa-heart fa-3x"></i>
-                <i class="fas fa-beer fa-3x"></i>
+                <i class="fas fa-heart fa-3x">
+                    Disfruta de nuestra sede mas cercana
+                </i>
                 <i class="fas fa-heart fa-3x"></i>
             </div>
         </section>
         <section id="amigos">
-            <h1>Bienvenid@ a nuestro Club de Amigos</h1>
-            <div class="puntos-fidelidad">
-                <h2>Gana puntos de fidelidad:</h2>
-                <ul>
-                    <li class="descripcion-ganar-puntos">Reservar eventos: 400 ptos</li>
-                    <li class="descripcion-ganar-puntos">Celebrar con nosotros tu cumple: 500 ptos</li>
-                    <li class="descripcion-ganar-puntos">Asistir a nuestro martes de Amigos: 50 ptos</li>
-                    <li class="descripcion-ganar-puntos">Participar de nuestro club de cine: 50 ptos</li>
-                    <li class="descripcion-ganar-puntos">Recomendar la cancion mejor votada de la noche: 400 ptos</li>
-                </ul>
-            </div>
-            <div class="inscripcion">
-                <form action="www.clover.com/registro">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="user_name"> 
-
-                    <label for="idDocument" >Documento de Identificacion:</label>
-                    <input type="text" id="idDocument" name="user_idDocument">
-
-                    <label for="email">Correo Electronico:</label>
-                    <input type="text" id="email" name="user_email">
-
-                    <button type="submit">Registrarme al Club</button>
-                </form>
-            </div>
-            
+            <h1 class="animated zoomInLeft" >Bienvenid@ a nuestro Club de Amigos</h1>
+            <div class="amigos">
+                <div class="amigos-seccion puntos-fidelidad">
+                    <h2>Gana puntos de fidelidad:</h2>
+                    <ul>
+                        <li class="descripcion-ganar-puntos">Reservar eventos: 400 ptos</li>
+                        <li class="descripcion-ganar-puntos">Celebrar con nosotros tu cumple: 500 ptos</li>
+                        <li class="descripcion-ganar-puntos">Asistir a nuestro martes de Amigos: 50 ptos</li>
+                        <li class="descripcion-ganar-puntos">Participar de nuestro club de cine: 50 ptos</li>
+                        <li class="descripcion-ganar-puntos">Recomendar la cancion mejor votada de la noche: 400 ptos</li>
+                    </ul>
+                </div>
+                <div class="amigos-seccion inscripcion">
+                    <form action="www.clover.com/registro">
+                        <label class="label-formulario" for="name">Nombre:</label>
+                        <input type="text" id="name" name="user_name" placeholder="Como te gusta que te digan tus amigos?"> 
+    
+                        <label class="label-formulario" for="idDocument">Documento de Identificacion:</label>
+                        <input type="text" id="idDocument" name="user_idDocument" placeholder="Incluye tu id sin puntos ni caracteres especiales">
+    
+                        <label class="label-formulario" for="email">Correo Electronico:</label>
+                        <input type="text" id="email" name="user_email" placeholder="No usaremos tu emal para enviarte correos">
+    
+                        <button type="submit" class="animated heartBeat">Ingresa al Club</button>
+                    </form>
+                </div>
+            </div>           
         </section>
-        
+        <footer>
+            <div>
+
+                <h2 class="animated tada slow">Created by:Cinthylli <i class="fas fa-heart "></i></h2>
+            </div>
+        </footer>
     </body>
     </html>

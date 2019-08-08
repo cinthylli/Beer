@@ -36,3 +36,27 @@ function getRndInteger(min, max){
 function distancia(x1,y1,x2,y2){
     return Math.sqrt(Math.pow(x1-x2,2) + Math.pow(y1-y2,2));
 }
+
+// ----------------------Audio
+
+function incluirAudioEnElId(url, id){
+    var elemento = document.getElementById("logo");
+    var introMusicLogoClick = function () {
+        var audioElement = document.createElement("audio");
+        audioElement.src("/music/beerSongI.mp3");
+        audioElement.autoplay = true;
+        elemento.appendChild(audioElement);
+    };
+    
+
+}  
+
+function play() {
+    var audio = document.getElementById("audio");
+    audio.play();
+}
+// ----------------------Audio
+
+// -----------------------------Animaciones
+
+// -----------------------------Animaciones

@@ -1,0 +1,116 @@
+/* 
+$color1: blue;
+$color2: bluelight;
+
+body {
+    background: lightgray;
+}
+
+h1 {
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .item {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        position: relative;
+        background: radial-gradient(transparent 75px,
+                $color1 90px,
+                $color2 160px);
+        border-radius: 50%;
+        box-shadow: 10px 10px 30px white inset,
+            5px 5px 20px;
+
+        &:afeter {
+            content: "";
+            width: 40px;
+            height: 15px;
+            background: radial-gradient(transparent,
+                    white);
+            border-radius: 50%;
+            transform: rotate(-45deg);
+            top: 30px;
+            left: 30px;
+
+
+        }
+    }
+} */
+/* Usando https: //www.youtube.com/watch?v=x3fQ6IZpUfQ */
+/* 
+body {
+    background: rgb(4, 216, 39);
+}
+
+h1 {
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenedor .item {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    position: relative;
+    background: radial-gradient(transparent 140px, rgb(240, 13, 202) 90px, rgb(231, 19, 19) 50px);
+    border-radius: 50%;
+    box-shadow: 10px 10px 30px rgba(197, 185, 18, 0.555) inset, 5px 5px 20px;
+}
+
+.contenedor .item:after {
+    content: "";
+    width: 40px;
+    height: 15px;
+    background: radial-gradient(transparent, white);
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    top: 25px;
+    left: 25px;
+} */
+
+
+body {
+    background: rgb(54, 24, 24);
+}
+
+h1 {
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenedor .item {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    position: relative;
+    background: radial-gradient(transparent 75px, rgba(219, 206, 26, 0.438) 90px, rgb(5, 247, 247) 160px);
+    border-radius: 50%;
+    box-shadow: 10px 10px 30px white inset, 5px 5px 20px;
+}
+
+.contenedor .item:after {
+    content: "";
+    width: 40px;
+    height: 15px;
+    background: radial-gradient(transparent, white);
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    top: 30px;
+    left: 30px;
+}
